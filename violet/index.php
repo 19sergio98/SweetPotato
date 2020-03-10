@@ -77,7 +77,7 @@
                     </a>
                 </div>
                 <div class="user-access">
-                    <a href="#">Register</a>
+                    <a href="./user.register.php">Register</a>
                     <a href="./login.php" class="in">Sign in</a>
                 </div>
                 <nav class="main-menu mobile-menu">
@@ -88,6 +88,7 @@
                                 <li><a href="product-page.php">Product Page</a></li>
                                 <li><a href="shopping-cart.php">Shopping Card</a></li>
                                 <li><a href="check-out.php">Check out</a></li>
+                                 <li><a href="product-register.php">Añadir producto</a></li>
                             </ul>
                         </li>
                         <li><a href="./product-page.php">About</a></li>
