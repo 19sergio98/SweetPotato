@@ -26,6 +26,26 @@
 
 <body>
     <!-- Page Preloder -->
+    <H1>KLK MI PANA</H1>
+
+    <?php 
+
+         $link=new mysqli("bbdd.dlsi.ua.es","gi_amazon",".gi_amazon.","gi_amazon");
+         if(!$link)
+              die("Error:no pudo conectar");
+
+          $query =$link -> query("SELECT * from Marca");
+                                while($row = mysqli_fetch_array($query))
+                                {
+                                 //echo  $row ;
+                                 echo implode( ", ", $row );
+                                }
+                                 
+        //mysql_close($link);
+
+    ?>
+
+
     <div id="preloder">
         <div class="loader"></div>
     </div>
