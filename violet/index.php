@@ -30,18 +30,20 @@
 
     <?php 
 
+        //para abrir la conexion
          $link=new mysqli("bbdd.dlsi.ua.es","gi_amazon",".gi_amazon.","gi_amazon");
          if(!$link)
               die("Error:no pudo conectar");
 
-          $query =$link -> query("SELECT * from Marca");
-                                while($row = mysqli_fetch_array($query))
-                                {
-                                 //echo  $row ;
-                                 echo implode( ", ", $row );
-                                }
+          // para hacer una query
+            $query =$link -> query("SELECT * from Marca");
+            while($row = mysqli_fetch_array($query))
+            {
+             echo implode( ", ", $row );
+            }
                                  
-        //mysql_close($link);
+        // para cerrar la conexion
+        $link->close();
 
     ?>
 
