@@ -79,7 +79,7 @@
                     </a>
                 </div>
                 <div class="user-access">
-                    <a href="./user.register.php">Register</a>
+                    <a href="./user-register.php">Register</a>
                     <a href="./login.php" class="in">Sign in</a>
                 </div>
                 <nav class="main-menu mobile-menu">
