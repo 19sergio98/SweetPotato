@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+=======
+
+>>>>>>> a311e1afdc32461e54bad269efddaa22757d4f68
  <html lang="zxx">
 
 <head>
@@ -25,6 +29,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 
     <!-- Search model -->
 	<div class="search-model">
@@ -127,12 +132,86 @@
 </div>
 </div>
 
+=======
+<div class="container">
+	<div class="panel-body">
+        <form class="form-horizontal" role="from" action="user-register.php" method="post" autocomplete="off">
+
+        <div class="form-group">
+             <label for="email" class="col-md-3 contol-label">Email:</label>
+             <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Email" name="usuario" required>
+             </div>
+        </div>
+
+        
+        <div class="form-group">
+             <label for="nick" class="col-md-3 contol-label">Nickname:</label>
+             <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Nickname" name="nick" required>
+             </div>
+        </div>
+
+          
+        <div class="form-group">
+             <label for="nombre" class="col-md-3 contol-label">Nombre:</label>
+             <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
+             </div>
+        </div>
+
+          
+        <div class="form-group">
+             <label for="apellidos" class="col-md-3 contol-label">Apellidos:</label>
+             <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Apellidos" name="apellidos" required>
+             </div>
+        </div>
+
+          
+        <div class="form-group">
+             <label for="dni" class="col-md-3 contol-label">DNI:</label>
+             <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="DNI" name="dni" required>
+             </div>
+        </div>
+
+          
+        <div class="form-group">
+             <label for="calle" class="col-md-3 contol-label">Calle:</label>
+             <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Calle" name="calle" required>
+             </div>
+        </div>
+
+          
+        <div class="form-group">
+             <label for="pass" class="col-md-3 contol-label">Password:</label>
+             <div class="col-md-9">
+                <input type="password" class="form-control" placeholder="Password" name="password" required>
+             </div>
+        </div>
+
+          
+        <div class="form-group">
+             <label for="confirm" class="col-md-3 contol-label">Confirmar password:</label>
+             <div class="col-md-9">
+                <input type="password" class="form-control" placeholder="Confirmar password" name="repassword" required>
+             </div>
+        </div>
+<div><input type="submit" name="enviar" value="Registrar"></div>
+</form>
+>>>>>>> a311e1afdc32461e54bad269efddaa22757d4f68
 
   <?php
 	$conexion=new mysqli("bbdd.dlsi.ua.es","gi_amazon",".gi_amazon.","gi_amazon"); 
 	
 	if($conexion->connect_error){
+<<<<<<< HEAD
 		die("Conexión Fallida : " . $conexion->connect_error);
+=======
+		die("ConexiÃ³n Fallida : " . $conexion->connect_error);
+>>>>>>> a311e1afdc32461e54bad269efddaa22757d4f68
 	}
 if(isset($_POST['enviar'])) { 
     if($_POST['usuario'] == '' or $_POST['password'] == '' or $_POST['repassword'] == '' or $_POST['nick'] == '' or $_POST['nombre'] == ''
@@ -155,7 +234,11 @@ if(isset($_POST['enviar'])) {
 
             if($_POST['password'] == $_POST['repassword']) { 
                 $usuario = $_POST['usuario']; // email
+<<<<<<< HEAD
                 $password = $_POST['password']; // contraeña
+=======
+                $password = $_POST['password']; // contraeÃ±a
+>>>>>>> a311e1afdc32461e54bad269efddaa22757d4f68
                 $nickn = $_POST['nick']; 
                 $nombre_usuario = $_POST['nombre']; 
                 $ape = $_POST['apellidos']; 
@@ -164,7 +247,11 @@ if(isset($_POST['enviar'])) {
                
 
 
+<<<<<<< HEAD
                 $sql = "INSERT INTO Usuario (email, nickname, nombre, apellidos, dni, calle, contraseña) VALUES ('$usuario', '$nickn', '$nombre_usuario', '$ape', '$d', '$c', '$password')"; 
+=======
+                $sql = "INSERT INTO Usuario (email, nickname, nombre, apellidos, dni, calle, contraseÃ±a) VALUES ('$usuario', '$nickn', '$nombre_usuario', '$ape', '$d', '$c', '$password')"; 
+>>>>>>> a311e1afdc32461e54bad269efddaa22757d4f68
 
                 if($conexion->query($sql) == TRUE){
 
@@ -186,6 +273,7 @@ if(isset($_POST['enviar'])) {
  mysqli_close($conexion);
 
  ?>
+<<<<<<< HEAD
 
 
  </div>
@@ -295,6 +383,11 @@ if(isset($_POST['enviar'])) {
 
 
 
+=======
+ </div>
+ </div>
+ </div>
+>>>>>>> a311e1afdc32461e54bad269efddaa22757d4f68
 	</body>
 </html>
 
@@ -304,6 +397,9 @@ if(isset($_POST['enviar'])) {
   
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> a311e1afdc32461e54bad269efddaa22757d4f68
