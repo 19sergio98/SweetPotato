@@ -46,7 +46,7 @@
         <div class="container-fluid">
             <div class="inner-header">
                 <div class="logo">
-                    <a href="./index.php"><img src="img/logo.png" alt=""></a>
+                    <a href="./index.php"><img src="img/amazon.png" alt=""></a>
                 </div>
                 <div class="header-right">
                     <img src="img/icons/search.png" alt="" class="search-trigger">
